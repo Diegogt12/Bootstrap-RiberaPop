@@ -1,0 +1,412 @@
+<!doctype html>
+<html lang="es">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Mi Proyecto de los 2000s</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Seymour+One&family=VT323&display=swap" rel="stylesheet">
+    <link href="../css/bootstrap.min.css" rel="stylesheet">
+    <link href="../css/style.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
+</head>
+
+<body class="m-0 min-vh-100 d-flex flex-column bg-body">
+
+    <div class="custom-frame position-absolute overflow-auto p-3 justify-content-center">
+        <div class="containerMain">
+            <!--NavBar-->
+            <nav class="navbar navbar-expand-lg bg-primary text-light border-windows ">
+                <div class="container-fluid">
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#navbarTogglerDemo03" aria-controls="navbarTogglerDemo03" aria-expanded="false"
+                        aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <a class="navbar-brand text-dark" href="../index.html"><img src="../assets/images/icon.png"
+                            alt=""></a>
+                    <div class="collapse navbar-collapse text-light" id="navbarTogglerDemo03">
+                        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                            <li class="nav-item">
+                                <a class="nav-link text-light  " aria-current="page"
+                                    href="../index.html">Inicio</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link text-light text-decoration-underline" href="./blog.html">Blog</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link text-light " href="./horoscopo.html">Horóscopo</a>
+                            </li>
+                        </ul>
+                        <div class="d-flex justify-content-center align-content-center">
+                            <img class="bg-secondary rounded-5 img-lamejor" src="../assets/images/lamejorgrande.png"
+                                alt="">
+                        </div>
+                    </div>
+                </div>
+            </nav>
+
+            <main class="mt-3 border border-end border-1  d-flex flex-column border-windows  ">
+                <!--tarjetas-->
+                <div class="position-relative ">
+                    <!-- Fondo-->
+                    <div class="position-absolute top-0 start-0 w-100 h-50 background-sparkle"></div>
+                    <!--Tarjetas-->
+                    <section class="row  align-content-center justify-content-around g-1 m-5 ">
+                        <div class="card bg-body-secondary text-center d-none d-md-block col-3">
+                            <div class="card-body">
+                                <h5 class="card-title text-body">Test: ¿Le gustas?</h5>
+                                <p class="card-text">Descubre si tu "crush" siente lo mismo por ti.</p>
+                            </div>
+                        </div>
+                        <div class="card bg-body-secondary text-center d-none d-md-block col-3">
+                            <div class="card-body">
+                                <h5 class="card-title text-body">Look del mes</h5>
+                                <p class="card-text ">Pantalones de tiro bajo y mucho gloss.</p>
+                            </div>
+                        </div>
+                        <div class="card bg-body-secondary text-center d-none d-md-block col-3">
+                            <div class="card-body">
+                                <h5 class="card-title text-body">Tu Horóscopo</h5>
+                                <p class="card-text">¿Qué dicen los astros sobre tu próximo examen?</p>
+                            </div>
+                        </div>
+                    </section>
+                </div>
+                <!-- Blog -->
+                <section class=" m-5  p-3 ">
+                    <!--Textos-->
+                    <article class="">
+                        <h2 class="text-center mb-4">El Diario de la Redacción</h2>
+                        <p>¡Hola, chicas! Bienvenidas a nuestro rincón secreto. Aquí hablamos de todo lo que nos
+                            importa: desde los estrenos de Disney Channel hasta los cotilleos de la cafetería. ¡Dejad
+                            vuestro comentario y no olvidéis firmar en nuestro libro de visitas digital!  </p>
+                    </article>
+                    <!-- Paginación + nueva publicación + modal nueva publicación -->
+                    <div class="d-flex flex-column flex-md-row justify-content-md-start d gap-5 mt-5 ">
+                        <!--Paginacion-->
+                        <nav aria-label="Navegación de archivos" class="">
+                            <ul class="pagination  justify-content-center justify-content-md-start">
+                                <li class="page-item border-windows"><a href="#"
+                                        class="page-link text-light bg-primary-subtle">Atrás</a></li>
+                                <li class="page-item border-windows"><a class="page-link text-primary" href="#">1</a>
+                                </li>
+                                <li class="page-item active border-windows ">
+                                    <a class="page-link text-primary border-windows bg-body-secondary" href="#"
+                                        aria-current="page">2</a>
+                                </li>
+                                <li class="page-item border-windows"><a class="page-link text-primary" href="#">3</a>
+                                </li>
+                                <li class="page-item border-windows"><a class="page-link text-light bg-primary-subtle"
+                                        href="#">Siguiente</a></li>
+                            </ul>
+                        </nav>
+                        <!--nueva publicacion-->
+                        <button type="button" class="btn btn-primary fs-5" data-bs-toggle="modal"
+                            data-bs-target="#modalPublicacion" data-bs-whatever="@mdo" style="height: 45px;">Nueva
+                            publicación</button>
+                        <!--modal nueva-->
+                        <div class="modal fade" id="modalPublicacion" tabindex="-1" aria-labelledby="exampleModalLabel"
+                            aria-hidden="true">
+                            <div class="modal-dialog modal-dialog-centered border-5">
+                                <div class="modal-content border-windows border-5 rounded-0 shadow-none">
+
+                                    <div class="modal-header text-light bg-primary-subtle fw-bold rounded-0 border-0">
+                                        <h3 class="modal-title fs-5 " id="exampleModalLabel"></h3>
+                                        <button type="button"
+                                            class="btn-close border-windows rounded-0 bg-body text-dark opacity-100"
+                                            data-bs-dismiss="modal" aria-label="Close"></button>
+                                    </div>
+
+                                    <div class="modal-body bg-body">
+                                        <form id="formPublicacion">
+                                            <div class="row mb-3">
+                                                <div class="col-md-6">
+                                                    <label for="nombre" class="form-label fw-bold">Nick:</label>
+                                                    <input type="text"
+                                                        class="form-control border-windows-pink bg-dark-subtle"
+                                                        id="nombre" placeholder="Tu nick más cool...">
+                                                </div>
+                                                <div class="col-md-6 mt-3 mt-md-0">
+                                                    <label for="correo" class="form-label fw-bold">E-mail:</label>
+                                                    <input type="email"
+                                                        class="form-control border-windows-pink bg-dark-subtle"
+                                                        id="correo" placeholder="chica_fashion@msn.com">
+                                                </div>
+                                            </div>
+
+                                            <div class="mb-3">
+                                                <label for="titulo" class="form-label fw-bold">Asunto
+                                                    del post:</label>
+                                                <input type="text"
+                                                    class="form-control border-windows-pink bg-dark-subtle"
+                                                    id="titulo" placeholder="¿De qué quieres hablar hoy?">
+                                            </div>
+
+                                            <div class="mb-3">
+                                                <label for="contenido" class="form-label fw-bold">Cuerpo del
+                                                    mensaje:</label>
+                                                <textarea
+                                                    class="form-control textarea-scroll border-windows-pink bg-dark-subtle"
+                                                    id="contenido" rows="5"
+                                                    placeholder="Escribe aquí tu post..."></textarea>
+                                            </div>
+                                            <div class="form-check">
+                                                <input class="form-check-input" type="checkbox" value=""
+                                                    id="checkIndeterminate">
+                                                <label class="form-check-label" for="checkIndeterminate">
+                                                    Hacer que mi post sea público para todas
+                                                </label>
+                                            </div>
+                                        </form>
+                                    </div>
+
+                                    <div class="modal-footer bg-body border-0 pt-0">
+                                        <button type="button" class="btn btn-secondary"
+                                            data-bs-dismiss="modal">Cerrar</button>
+                                        <button type="submit" form="formPublicacion"
+                                            class="btn btn-primary px-4">¡Publicar!</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!--aside + tabla-->
+                    <div class=" row  position-relative align-items-start">
+                        <!--aside-->
+                        <aside
+                            class="col-12 col-lg-3 order-1 order-lg-2 position-sticky-mio border border-windows p-3 mt-4 bg-primary-subtle">
+                            <h3 class="text-center mb-4 text-decoration-underline  text-break">¡Aviso!</h3>
+                            <ul class="list-group list-group-flush ">
+                                <li class="list-group-item  bg-primary-subtle text-light">¡Recuerda usar los enlaces de la tabla!</li>
+                                <li class="list-group-item bg-primary-subtle text-light">¡Recuerda usar el boton de nueva publicacion!
+                                </li>
+                                <li class="list-group-item   bg-primary-subtle text-light">¡En el lateral soy sticky!</li>
+                            </ul>
+                        </aside>
+                        <!--tabla-->
+                        <article class="col-12 col-lg-9 order-2 order-lg-1 mt-4">
+                            <table class="table table-bordered border-windows table-secondary ">
+                                <tbody class="">
+                                    <tr class="">
+                                        <td class="col-10 align-middle">
+                                            <a href="#" class="text-primary link" data-bs-toggle="modal"
+                                                data-bs-target="#exampleModal">TOP 10: Canciones que no dejas de
+                                                escuchar</a>
+                                        </td>
+                                        <td class="col-2 text-center align-middle">
+                                            <div class="d-flex flex-column align-items-center">
+                                                <i class="fa-regular fa-message "></i>
+                                                <span class="fw-bold">42</span>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="col-10 align-middle">
+                                            <a href="#" class="text-primary link" data-bs-toggle="modal"
+                                                data-bs-target="#exampleModal">¿Team Britney o Team Christina? ¡Vota
+                                                ya!</a>
+                                        </td>
+                                        <td class="col-2 text-center align-middle">
+                                            <div class="d-flex flex-column align-items-center">
+                                                <i class="fa-regular fa-message"></i>
+                                                <span class="fw-bold">13</span>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="col-10 align-middle">
+                                            <a href="#" class="text-primary link" data-bs-toggle="modal"
+                                                data-bs-target="#exampleModal">Mis trucos para decorar el fotolog</a>
+                                        </td>
+                                        <td class="col-2 text-center align-middle">
+                                            <div class="d-flex flex-column align-items-center">
+                                                <i class="fa-regular fa-message"></i>
+                                                <span class="fw-bold">58</span>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="col-10 align-middle">
+                                            <a href="#" class="text-primary link" data-bs-toggle="modal"
+                                                data-bs-target="#exampleModal">Cosas que solo entiendes si ves Rebelde
+                                                Way</a>
+                                        </td>
+                                        <td class="col-2 text-center align-middle">
+                                            <div class="d-flex flex-column align-items-center">
+                                                <i class="fa-regular fa-message"></i>
+                                                <span class="fw-bold">7</span>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="col-10 align-middle">
+                                            <a href="#" class="text-primary link" data-bs-toggle="modal"
+                                                data-bs-target="#exampleModal">¡Ayuda! ¿Cómo le pido su MSN a mi chico
+                                                ideal?</a>
+                                        </td>
+                                        <td class="col-2 text-center align-middle">
+                                            <div class="d-flex flex-column align-items-center">
+                                                <i class="fa-regular fa-message"></i>
+                                                <span class="fw-bold">31</span>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="col-10 align-middle">
+                                            <a href="#" class="text-primary link" data-bs-toggle="modal"
+                                                data-bs-target="#exampleModal">Outfit check: ¿Qué te pones este
+                                                sábado?</a>
+                                        </td>
+                                        <td class="col-2 text-center align-middle">
+                                            <div class="d-flex flex-column align-items-center">
+                                                <i class="fa-regular fa-message"></i>
+                                                <span class="fw-bold">22</span>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="col-10 align-middle">
+                                            <a href="#" class="text-primary link" data-bs-toggle="modal"
+                                                data-bs-target="#exampleModal">Mi diario de la excursión de fin de
+                                                curso</a>
+                                        </td>
+                                        <td class="col-2 text-center align-middle">
+                                            <div class="d-flex flex-column align-items-center">
+                                                <i class="fa-regular fa-message"></i>
+                                                <span class="fw-bold">55</span>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="col-10 align-middle">
+                                            <a href="#" class="text-primary link" data-bs-toggle="modal"
+                                                data-bs-target="#exampleModal">Review del último concierto de RBD</a>
+                                        </td>
+                                        <td class="col-2 text-center align-middle">
+                                            <div class="d-flex flex-column align-items-center">
+                                                <i class="fa-regular fa-message"></i>
+                                                <span class="fw-bold">4</span>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="col-10 align-middle">
+                                            <a href="#" class="text-primary link" data-bs-toggle="modal"
+                                                data-bs-target="#exampleModal">Colección de parches para tu mochila</a>
+                                        </td>
+                                        <td class="col-2 text-center align-middle">
+                                            <div class="d-flex flex-column align-items-center">
+                                                <i class="fa-regular fa-message"></i>
+                                                <span class="fw-bold">39</span>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="col-10 align-middle">
+                                            <a href="#" class="text-primary link" data-bs-toggle="modal"
+                                                data-bs-target="#exampleModal">Dilema: ¿Flequillo recto o de lado?</a>
+                                        </td>
+                                        <td class="col-2 text-center align-middle">
+                                            <div class="d-flex flex-column align-items-center">
+                                                <i class="fa-regular fa-message"></i>
+                                                <span class="fw-bold">60</span>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="col-10 align-middle">
+                                            <a href="#" class="text-primary link" data-bs-toggle="modal"
+                                                data-bs-target="#exampleModal">¿Alguien tiene el tono de móvil de Kim
+                                                Possible?</a>
+                                        </td>
+                                        <td class="col-2 text-center align-middle">
+                                            <div class="d-flex flex-column align-items-center">
+                                                <i class="fa-regular fa-message"></i>
+                                                <span class="fw-bold">18</span>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="col-10 align-middle">
+                                            <a href="#" class="text-primary link" data-bs-toggle="modal"
+                                                data-bs-target="#exampleModal">Cómo sobrevivir a un examen de mates</a>
+                                        </td>
+                                        <td class="col-2 text-center align-middle">
+                                            <div class="d-flex flex-column align-items-center">
+                                                <i class="fa-regular fa-message"></i>
+                                                <span class="fw-bold">47</span>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="col-10 align-middle">
+                                            <a href="#" class="text-primary link" data-bs-toggle="modal"
+                                                data-bs-target="#exampleModal">Rumores sobre la nueva temporada de
+                                                OC</a>
+                                        </td>
+                                        <td class="col-2 text-center align-middle">
+                                            <div class="d-flex flex-column align-items-center">
+                                                <i class="fa-regular fa-message"></i>
+                                                <span class="fw-bold">9</span>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="col-10 align-middle">
+                                            <a href="#" class="text-primary link" data-bs-toggle="modal"
+                                                data-bs-target="#exampleModal">¡Mi habitación parece un bazar de los
+                                                2000!</a>
+                                        </td>
+                                        <td class="col-2 text-center align-middle">
+                                            <div class="d-flex flex-column align-items-center">
+                                                <i class="fa-regular fa-message"></i>
+                                                <span class="fw-bold">25</span>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="col-10 align-middle">
+                                            <a href="#" class="text-primary link" data-bs-toggle="modal"
+                                                data-bs-target="#exampleModal">Adiós al cole: ¡Llega el verano!</a>
+                                        </td>
+                                        <td class="col-2 text-center align-middle">
+                                            <div class="d-flex flex-column align-items-center">
+                                                <i class="fa-regular fa-message"></i>
+                                                <span class="fw-bold">33</span>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </article>
+                    </div>
+                </section>
+                <!-- Modal lectura post -->
+                <section class="modal fade " id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+                    aria-hidden="true">
+                    <div class="modal-dialog modal-dialog-centered border-5">
+                        <div class="modal-content border-windows  border-5 border-windows ">
+                            <div class="modal-header text-light bg-primary-subtle fw-bold">
+                                <h3 class="modal-title fs-5  " id="exampleModalLabel "></h3>
+                                <button type="button" class="btn-close border-windows rounded-0 bg-body text-dark"
+                                    data-bs-dismiss="modal" aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body">
+                                <div class="mb-3">
+                                    <label for="comentarios" class="form-label">Contenido del post:</label>
+                                    <textarea class="form-control border-windows-pink bg-dark-subtle textarea-scroll" id="comentarios" rows="5">Chicas, ¿os habéis enterado de lo último? He oído que si pones este código en tu perfil de MySpace, las letras brillan con purpurina rosa. ¡Es súper fuerte! Espero que os guste el post, comentad abajo vuestra opinión. ¡Besitos mil! </textarea>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </main>
+        </div>
+    </div>
+
+    <script src="../js/bootstrap.bundle.min.js"></script>
+    <script src="../js/script.js"></script>
+</body>

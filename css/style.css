@@ -1,0 +1,246 @@
+/* Sobreescribir bootstrap */
+:root {
+  --bs-primary: #FF1493;
+  --bs-primary-rgb: 255, 20, 147;
+  --bs-secondary: #E0BBE4;
+  --bs-secondary-rgb: 224, 187, 228;
+  --bs-success: #00FF00;
+  --bs-info: #00FFFF;
+  --bs-warning: #FF00FF;
+  --bs-danger: #FF4500;
+  --bs-light: #D2D3D3;
+  --bs-dark: #212529;
+  --bs-body-bg: #fdd1f0;
+  --bs-body-bg-rgb: 253, 209, 240;
+  --bs-body-color: #4B0082;
+  --bs-body-color-rgb: 75, 0, 130; 
+  --bs-emphasis-color: #FF1493;
+  --bs-border-radius: 0px;
+  --bs-border-width: 2px;
+  --bs-border-color: #808080;
+  --bs-primary-bg-subtle: #FF69B4;
+  --bs-body-secondary-bg: #f3cdf7;
+  --win-sh: #808080;
+  --win-hl: #ffffff;
+  --bs-dark-bg-subtle: #D2D3D3; 
+}
+
+body {
+  background: url('../assets/images/bg768.png') no-repeat center top fixed;
+  background-size: 100% 100%;
+  font-family: "Comic Sans MS", Verdana, sans-serif;
+  color: var(--bs-body-color);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: 'Seymour One', Tahoma, sans-serif;
+}
+
+.btn,
+.border-windows,
+.textarea-scroll::-webkit-scrollbar-thumb {
+  border: 2px solid !important;
+  border-color: var(--win-hl) var(--win-sh) var(--win-sh) var(--win-hl) !important;
+}
+
+.btn {
+  padding: 4px 10px !important;
+  font-family: 'VT323', sans-serif;
+  background-color: var(--bs-light) !important;
+  color: black !important;
+}
+
+.btn-primary {
+  background-color: var(--bs-primary) !important;
+  color: white !important;
+}
+
+.btn-secondary {
+  background-color: var(--bs-secondary) !important;
+}
+
+.btn-success {
+  background-color: var(--bs-success) !important;
+}
+
+.btn-info {
+  background-color: var(--bs-info) !important;
+}
+
+.btn-warning {
+  background-color: var(--bs-warning) !important;
+}
+
+.btn-danger {
+  background-color: var(--bs-danger) !important;
+}
+
+.btn:active {
+  border-color: var(--win-sh) var(--win-hl) var(--win-hl) var(--win-sh) !important;
+  transform: translate(1px, 1px);
+}
+
+.table-secondary,
+.table-secondary td,
+.table-secondary th,
+.bg-body-secondary {
+  background-color: var(--bs-body-secondary-bg) !important;
+  color: var(--bs-emphasis-color);
+  --bs-card-bg: var(--bs-body-secondary-bg);
+}
+
+.form-check-input {
+  border-radius: 0 !important;
+  border: 2px solid var(--bs-border-color) !important;
+}
+
+.form-check-input:checked {
+  background-color: var(--bs-primary) !important;
+}
+
+.accordion-item {
+  --bs-accordion-btn-bg: var(--bs-secondary);
+  --bs-accordion-active-bg: var(--bs-primary);
+  --bs-accordion-btn-color: #fff;
+}
+
+.accordion-button::after {
+  filter: brightness(0) invert(1);
+}
+
+.border-windows-pink {
+  border: 2px solid !important;
+  border-color: var(--bs-primary-bg-subtle) var(--bs-secondary) var(--bs-secondary) #ebebeb !important;
+}
+
+.textarea-scroll::-webkit-scrollbar {
+  width: 12px;
+}
+
+.textarea-scroll::-webkit-scrollbar-track {
+  background: #d2d3d3;
+}
+
+.textarea-scroll::-webkit-scrollbar-thumb:active {
+  background: #c0c0c0;
+  border-width: 1px !important;
+}
+
+/*
+Marco/imagen de fondo
+*/
+.custom-frame {
+  top: 14.8%;
+  left: 0.22%;
+  width: 95.6vw;
+  height: 80.4vh;
+
+}
+
+@media (min-width: 768px) {
+  body {
+    background-image: url('../assets/images/bg1024.png');
+  }
+
+  .custom-frame {
+    left: 0.52%;
+    width: 97.6vw;
+    height: 80vh;
+  }
+}
+
+@media (min-width: 1200px) {
+  body {
+    background-image: url('../assets/images/bgriberapop.png');
+  }
+
+  .custom-frame {
+    top: 14.3%;
+    left: 0.22%;
+    width: 98.6vw;
+    height: 81.5vh;
+  }
+}
+
+.custom-frame::-webkit-scrollbar {
+  width: 16px;
+}
+
+.custom-frame::-webkit-scrollbar-track {
+  background: #d2d3d3;
+  background-image: radial-gradient(#808080 10%, transparent 10%);
+  background-size: 2px 2px;
+}
+
+.custom-frame::-webkit-scrollbar-thumb {
+  background: #d2d3d3;
+  border-top: 2px solid #ffffff;
+  border-left: 2px solid #ffffff;
+  border-bottom: 2px solid #808080;
+  border-right: 2px solid #808080;
+}
+
+.custom-frame::-webkit-scrollbar-thumb:active {
+  background: #c0c0c0;
+  border: 1px solid #808080;
+}
+
+
+
+
+
+/*
+Mis clases css
+*/
+.mi-img {
+  width: 60px;
+
+}
+
+.containerMain {
+  max-width: 1600px;
+  margin: 0 auto;
+}
+
+.gif1 {
+  width: 120px;
+  transform: translate(-23%, -55%) rotate(-30deg);
+}
+
+.gif2 {
+  width: 110px;
+  transform: translate(-80%, -50%) rotate(20deg);
+}
+
+.background-sparkle {
+  background-image: url('../assets/images/fondo.jpg');
+  background-repeat: repeat;
+  background-size: 25%;
+}
+
+.link:hover {
+  color: var(--bs-primary-text-emphasis) !important;
+}
+
+.img-lamejor {
+  width: 136px;
+  height: 50px;
+  object-fit: cover;
+}
+
+
+.transition-2s {
+  transition: width 2s linear !important;
+}
+
+@media (min-width: 992px) {
+  .position-sticky-mio {
+    position: sticky;
+    top: 0;
+  }
+}
